@@ -12,4 +12,6 @@ app.get('/', ( req, res ) =>{
  // Public (static) Listen Server
  app.use(express.static('public'))
 
- app.listen( 3000, () => console.log(`Server up : http://localhost:3000`) )
+ const PORT = process.env.PORT || 3000;
+
+ app.listen( PORT, () => console.log(`Server up on PORT: http://localhost:${PORT}`) )
