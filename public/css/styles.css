@@ -83,6 +83,7 @@ button > .fa-magnifying-glass{
 
 .barrita{
     padding: 10px;
+    cursor: pointer;
 }
 
 header.visitados{
@@ -112,6 +113,7 @@ div{
 p.seccion{
     text-align: center;
     margin:30px 0px;
+    font-size: 1.7em;
 }
 /* main */
 main{
@@ -210,6 +212,11 @@ h4.footer {
     .navegacion{
         display:none;
     }
+    p.seccion{
+        text-align: center;
+        margin:30px 0px;
+        font-size: 1.3em;
+    }
     img.banner{
         display:none;
     }
@@ -238,10 +245,16 @@ h4.footer {
     }
     section{
         align-items: flex-start;
+        
+    }
+    .navegacion{
+        display:none;
     }
 
-    .articles{
+    .descripcionP{
         justify-content: flex-start;
+        cursor: pointer;
+        transition: box-shadow, .5s, scale,.5s;
     }
 
     
@@ -286,6 +299,7 @@ h4.footer {
     .barrita{
         display: none;
     }
+    
 
     article{
         cursor: pointer;

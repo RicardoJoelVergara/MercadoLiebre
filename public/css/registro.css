@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Roboto";
+    font-size: 12px;
+    
+}
+body{
+    background: #ebebeb;
+    width: 100%;
+    font-size: 12px;
+
+}
+.header-top{
+    background-color: #EAC926;
+    width: 100%;
+    height:auto;
+}
+.top{
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navegacion{
+    
+    text-align: left;
+    margin: 20px;
+    padding:10px ;
+    flex-wrap: wrap;
+}
+.top > form#search{
+    background-color: white;
+    display: flex;
+    height: 20px;
+}
+
+form#search >  input{
+    width: 100px;
+    height: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 10px 5px;
+}
+
+form#search >  button{
+    outline: none;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-left: 1px  solid lightgrey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > .fa-magnifying-glass{
+    color: rgb(145, 145, 145);
+    font-size: 10px;
+}
+img.logo{
+    width: 210px;
+    height:auto;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*smartphone*/
+@media (max-width: 767px){
+    .navegacion{
+        display:none;
+    }
+    
+    img.logo{
+        width: 100px;
+        height:auto;
+        
+    }
+   
+    .top{
+        padding: 10px ;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+
+}
+
+/*tablet*/
+@media (max-width: 1023px){
+    
+    .navegacion{
+        display:none;
+    }
+
+    .top{
+    padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+
+/*Laptop */
+
+@media (min-width: 1024px) {
+    .header-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top{
+        width: 100%;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .header-top > nav{
+        display: block;
+    }
+
+    
+    .barrita{
+        display: none;
+    }
+    
+    form#search >  input{
+        width: 200px;
+    }
+}
+    
