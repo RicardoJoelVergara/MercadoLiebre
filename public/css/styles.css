@@ -13,16 +13,11 @@ body{
     width: 100%;
     font-size: 12px;
 
-    /*width: 400px;  Cambia el ancho según tus necesidades */
-  /* height: 400px;  Cambia la altura según tus necesidades */
 }
 
 .header-top{
     background-color: #EAC926;
-    min-height: 70px;
-    display: flex;
-    align-items: left;
-    justify-content: space-evenly;
+    
 }
 
 .top{
@@ -32,6 +27,24 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
+.navegacion{
+    
+    text-align: left;
+    margin: 20px;
+    padding:10px ;
+    flex-wrap: wrap;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}*/
 .top > form#search{
     background-color: white;
     display: flex;
@@ -64,10 +77,9 @@ button > .fa-magnifying-glass{
     color: rgb(145, 145, 145);
     font-size: 10px;
 }
-.navegacion{
-    
-    text-align: left;
-    margin: 10px;
+
+.barrita{
+    padding: 10px;
 }
 
 header.visitados{
@@ -84,9 +96,10 @@ div{
     text-align: center;
 }
 
-.titulo{
+.cuotas{
     text-align: center;
     margin:10px 0px;
+    
 }
 p.seccion{
     text-align: center;
@@ -149,18 +162,20 @@ p.descripcion {
 }
 
 div.descripcionP{
-    width: 14%;
-    margin: 15px;
+    width: 100%;
+    margin: 16px;
     border: 1px solid #ebebeb;
     overflow: hidden;
     background-color: white;
     padding: 14px 12px;
     
 }
-section{
-    
-    justify-content: space-between;
-    
+section.comprar{
+    margin: auto;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* footer */
@@ -180,6 +195,9 @@ h4.footer {
     text-align: center;
     
 }
+
+
+
 @media (min-width: 768px){
     i{
         font-size: 1.3em;
@@ -228,26 +246,7 @@ h4.footer {
         display: flex;
         justify-content: space-between;
     }
-/*
-    nav{
-        padding: 10px 0px;
-        background-color: aliceblue;
-        width: 50%;
-    }
 
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    li{
-        padding: 5px;
-        margin-left: 15px;
-        transition:  background-color, 1s;
-    }
-
-*/
     article{
         cursor: pointer;
         transition: box-shadow, .5s, scale,.5s;
