@@ -197,7 +197,14 @@ h4.footer {
 }
 
 
+/*smartphone*/
+@media (max-width: 766px){
+    .navegacion{
+        display:none;
+    }
+}
 
+/*tablet*/
 @media (min-width: 768px){
     i{
         font-size: 1.3em;
@@ -218,8 +225,7 @@ h4.footer {
 
 
 
-
-
+/*Laptop */
 
 @media (min-width: 1024px) {
     .header-top {
@@ -237,14 +243,9 @@ h4.footer {
         display: block;
     }
 
-    .menu-bars{
+    
+    .barrita{
         display: none;
-    }
-
-    .header-bottom{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 
     article{
