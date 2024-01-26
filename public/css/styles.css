@@ -17,6 +17,9 @@ body{
 
 .header-top{
     background-color: #EAC926;
+    width: 100%;
+    height:auto;
+    
     
 }
 
@@ -89,6 +92,11 @@ header.visitados{
 
 img.logo{
     width: 210px;
+    height:auto;
+    display: block;
+}
+img.banner{
+    width: 100%;
     height:auto;
     display: block;
 }
@@ -198,14 +206,33 @@ h4.footer {
 
 
 /*smartphone*/
-@media (max-width: 766px){
+@media (max-width: 767px){
     .navegacion{
         display:none;
     }
+    img.banner{
+        display:none;
+    }
+    img.logo{
+        width: 100px;
+        height:auto;
+        
+    }
+    /*.top{
+        justify-content: space-evenly;  
+        
+    }*/
+    .top{
+        padding: 10px ;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
 }
 
 /*tablet*/
-@media (min-width: 768px){
+@media (max-width: 1023px){
     i{
         font-size: 1.3em;
     }
@@ -217,9 +244,21 @@ h4.footer {
         justify-content: flex-start;
     }
 
-    form#search >  input{
-        width: 200px;
+    
+    img.banner{
+        display:none;
     }
+    /*.top{
+        justify-content: space-evenly;  
+        
+    }*/
+    .top{
+    padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
 }
 
 
@@ -253,6 +292,8 @@ h4.footer {
         transition: box-shadow, .5s, scale,.5s;
     }
 
-    
+    form#search >  input{
+        width: 200px;
+    }
 }
     
